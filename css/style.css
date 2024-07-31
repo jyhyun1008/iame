@@ -181,7 +181,8 @@ h2, h3, h4, h5, h6, b, strong {
 }
 
 .page {
-    width: 840px;
+    width: 100vw;
+    max-width: 840px;
     margin: 70px auto;
     padding: 10px;
 }
