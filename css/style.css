@@ -1,0 +1,152 @@
+/* style.css*/
+
+@font-face {
+    font-family: 'HSSanTokki20-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405@1.0/HSSanTokki20-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothicA1-Light';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/GothicA1-Light.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothicA1-Light';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/GothicA1-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+:root {
+    --accent: #F64A8A;
+    --accent-light: #FDB9C8;
+    --bg: #fcfcfc;
+}
+
+body {
+    font-family: 'GothicA1-Light';
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg);
+    font-size: 18px;
+  }
+
+h1 {
+    color: var(--accent);
+    font-family: 'HSSanTokki20-Regular';
+    font-size: 3em;
+}
+  
+  nav {
+    background-color: var(--accent);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+  }
+  
+  .logo {
+    font-family: 'HSSanTokki20-Regular';
+    font-size: 1.75rem;
+  }
+
+  .logo a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: 700;
+  }
+  
+  nav ul li a:hover {
+    color: var(--accent-light);
+  }
+  
+  .checkbtn {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    display: none;
+  }
+  
+  #check {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .checkbtn {
+      display: block;
+      order: 1;
+      margin-right: 20px;
+    }
+  
+    nav ul {
+      position: fixed;
+      top: 80px;
+      right: -100%;
+      background-color: var(--accent);
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.3s;
+    }
+  
+    nav ul li {
+      margin: 20px 0;
+    }
+  
+    nav ul li a {
+      font-size: 20px;
+    }
+  
+    #check:checked ~ ul {
+      right: 0;
+    }
+  }
+
+#banner {
+    background-image: url('../assets/main.png');
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#banner_txt {
+    position:absolute;
+    font-family: 'HSSanTokki20-Regular';
+    font-size: 5em;
+    color: white;
+    right: 0;
+    bottom: 10px;
+    text-align: right;
+}
+
+.page {
+    width: 840px;
+    margin: 70px auto;
+    padding: 10px;
+}
