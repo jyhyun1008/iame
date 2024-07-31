@@ -35,11 +35,11 @@ if (!page && !article) {
         document.querySelector(".page_content").innerHTML += marked.parse(out)
     })
 } else if (page == 'blog') {
-    document.querySelector(".page_title").innerText = '블로그'
+    document.querySelector(".page_title").innerText = '활동 기록'
     if (category) {
         document.querySelector(".page_title").innerText += '/'+category
-        document.querySelector(".page_content").innerHTML += '<div class="modoru"><a href="./?p=blog">전체보기</a></div>'
-    }
+    } 
+    document.querySelector(".page_content").innerHTML += '<div class="modoru"><a href="./?p=blog">전체보기</a></div>'
     document.querySelector(".page_content").innerHTML += '<div class="article_list"></div>'
     var url = "https://api.github.com/repos/"+githubUserName+"/"+githubRepoName+"/git/trees/main"
     fetch(url)
@@ -71,6 +71,9 @@ if (!page && !article) {
 
                     var categorieset = new Set(categories);
                     categories = [...categorieset];
+                    for (var j=0; j<categories.length; j++){
+                    document.querySelector(".modoru").innerHTML += ' · <a href="./?p=blog&c='+categories[j]+'">'+categories[j] + '</a>'
+                    }
 
                     for (var j=0; j<articles.length; j++){
                         if (articles[j].category == category || !category){
