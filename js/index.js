@@ -20,7 +20,7 @@ var page = qs.p;
 var category = qs.c;
 var article = qs.a;
 
-if (!page) {
+if (!page && !article) {
     var url = "https://raw.githubusercontent.com/"+githubUserName+"/"+githubRepoName+"/main/README.md"
     fetch(url)
     .then(res => res.text())
@@ -76,5 +76,18 @@ if (!page) {
                 })
             }
         }
+    })
+} else if (article) {
+    var article_category = article.split('_')[0]
+    var article_date = article.split('_')[1]
+    var article_title = article.split('_')[2].split('.')[0]
+    var url = "https://raw.githubusercontent.com/"+githubUserName+"/"+githubRepoName+"/main/posts/"+article+".md"
+    fetch(url)
+    .then(res => res.text())
+    .then((out) => {
+        document.querySelector(".page_title").innerText = article_title
+        document.querySelector(".page_content").innerHTML += '<div class="article_category"></div><div class="article_content"></div>'
+        document.querySelector(".article_category").innerHTML = '<a href="./?p=blog&c='+article_category+'">' + article_category+'</a> · '+article_date
+        document.querySelector(".article_content").innerHTML += marked.parse(out)
     })
 }

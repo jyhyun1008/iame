@@ -185,3 +185,8 @@ code {
     padding: 10px;
     border-bottom: 1px solid black;
 }
+
+.article_date, .article_category {
+    font-size: 16px;
+    line-height: 2em;
+}
