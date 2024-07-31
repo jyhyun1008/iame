@@ -174,3 +174,14 @@ h2, h3, h4, h5, h6, b, strong {
     margin: 70px auto;
     padding: 10px;
 }
+
+code {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #eeeeee;
+}
+
+.article {
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
