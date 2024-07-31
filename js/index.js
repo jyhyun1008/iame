@@ -36,6 +36,10 @@ if (!page && !article) {
     })
 } else if (page == 'blog') {
     document.querySelector(".page_title").innerText = '블로그'
+    if (category) {
+        document.querySelector(".page_title").innerText += '/'+category
+        document.querySelector(".page_content").innerHTML += '<div class="modoru"><a href="./?p=blog">전체보기</a></div>'
+    }
     document.querySelector(".page_content").innerHTML += '<div class="article_list"></div>'
     var url = "https://api.github.com/repos/"+githubUserName+"/"+githubRepoName+"/git/trees/main"
     fetch(url)
