@@ -27,13 +27,6 @@ if (!page && !article) {
     .then((out) => {
         document.querySelector(".page_content").innerHTML += marked.parse(out)
     })
-} else if (page == 'story') {
-    var url = "https://raw.githubusercontent.com/"+githubUserName+"/"+githubRepoName+"/main/pages/story.md"
-    fetch(url)
-    .then(res => res.text())
-    .then((out) => {
-        document.querySelector(".page_content").innerHTML += marked.parse(out)
-    })
 } else if (page == 'blog') {
     document.querySelector(".page_title").innerText = '활동 기록'
     if (category) {
@@ -97,4 +90,11 @@ if (!page && !article) {
         document.querySelector(".article_category").innerHTML = '<a href="./?p=blog&c='+article_category+'">' + article_category+'</a> · '+article_date
         document.querySelector(".article_content").innerHTML += marked.parse(out)
     })
-}
+} else if (page) {
+    var url = "https://raw.githubusercontent.com/"+githubUserName+"/"+githubRepoName+"/main/pages/"+page+".md"
+    fetch(url)
+    .then(res => res.text())
+    .then((out) => {
+        document.querySelector(".page_content").innerHTML += marked.parse(out)
+    })
+} 
