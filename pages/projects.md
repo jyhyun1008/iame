@@ -1,11 +1,17 @@
 # 소속 프로젝트
 
 ## 캐릭터 IP
-* [여고동락](https://slashpage.com/ygdr)
-* [C:d Live](https://slashpage.com/c-dlive)
+
+### [어쿠스틱 딜라이트](https://slashpage.com/ygdr)
+![acodeli.png](./assets/acodeli.png)
+
+### [C:d Live](https://slashpage.com/c-dlive)
+![cdlive.png](./assets/cdlive.png)
 
 ## 굿즈
-* [아메아미]((https://slashpage.com/ameami))
+
+### [아메아미](https://slashpage.com/ameami)
+![ameami.png](./assets/ameami.png)
 
 ## 커뮤니티
 * [이치고아메](https://slashpage.com/ichigoame)
