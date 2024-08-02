@@ -128,6 +128,11 @@ h2, h3, h4, h5, h6, b, strong {
   }
   
   @media (max-width: 768px) {
+
+    b, strong, h1, h2, h3, h4, h5, h6 {
+      text-decoration: none;
+    }
+
     .checkbtn {
       display: block;
       order: 1;
@@ -162,7 +167,7 @@ h2, h3, h4, h5, h6, b, strong {
   }
 
 #banner {
-    background-image: url('../assets/main.png');
+    background-image: url('../assets/2_front.png');
     height: 70vh;
     background-size: cover;
     background-position: center;
