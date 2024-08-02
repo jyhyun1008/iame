@@ -2,8 +2,10 @@
 
 ## 캐릭터 IP
 
-### [어쿠스틱 딜라이트](https://slashpage.com/ygdr)
-![acodeli.png](./assets/acodeli.png)
+### [롱고모에!](https://slashpage.com/ygdr)
+![rongomoe.png](./assets/rongomoe.png)
+
+동명의 [위키](https://rongo.moe)도 운영하고 있습니다.
 
 ### [C:d Live](https://slashpage.com/c-dlive)
 ![cdlive.png](./assets/cdlive.png)
