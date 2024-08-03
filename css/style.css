@@ -147,6 +147,7 @@ blockquote {
     }
   
     nav ul {
+      z-index: 999;
       position: fixed;
       top: 80px;
       right: -100%;
