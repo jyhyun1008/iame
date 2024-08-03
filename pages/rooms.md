@@ -6,20 +6,20 @@
 
 ## 메인 공간
 
-![1_front.png](./assets/1_front.png)
+![1_front.png](./assets/1_front.jpeg)
 
 주로 생활하게 될 곳입니다. 벙커 침대에 가구들을 짜맞추고, 수납장을 추가로 설치해 죽은 공간이 발생하지 않도록 배치했습니다.
 
-![1_inside.png](./assets/1_inside.png)
+![1_inside.png](./assets/1_inside.jpeg)
 
 시뷸레이션에서는 침대 내부가 깜깜해 보이지만, 적절한 조명을 달아 알맞은 분위기를 만들어 주려 합니다.
 
 ## 서브 공간
 
-![2_front.png](./assets/2_front.png)
+![2_front.png](./assets/2_front.jpeg)
 
 가벽을 기준으로 휴식 공간과 집중 공간으로 나뉘어져 있습니다. 집중 공간에서는 컴퓨터 없는 작업 환경을 제공합니다.
 
-![2_inside.png](./assets/2_inside.png)
+![2_inside.png](./assets/2_inside.jpeg)
 
 휴식 공간은 두 사람이 간단한 회의를 할 수 있는 공간이 되기도 합니다. 가벽의 단면에는 화이트보드 기능이 있습니다.
