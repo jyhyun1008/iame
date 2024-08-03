@@ -73,6 +73,7 @@ table {
 
 h2, h3, h4, h5, h6, b, strong {
     font-family: 'NanumSquareNeoExtraBold';
+    font-weight: normal;
 }
 
 blockquote {
@@ -134,10 +135,6 @@ blockquote {
   }
   
   @media (max-width: 768px) {
-
-    b, strong, h1, h2, h3, h4, h5, h6 {
-      font-weight: normal;
-    }
 
     .checkbtn {
       display: block;
