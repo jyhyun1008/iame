@@ -1,12 +1,8 @@
-# 이치고아메 매트릭스 스페이스
+# 이치고아메 디스코드 서버
 
-[참가 링크](https://matrix.to/#/!mQjTzDuIvuajyjVimy:matrix.org?via=matrix.org) - 관심 있는 모든 사람을 환영합니다.
+[참가 링크](https://discord.gg/dY9RcyJztN) - 관심 있는 모든 사람을 환영합니다.
 
 # 소개 및 대화 규칙
-
-## 매트릭스가 뭐예요?
-
-* 그러게요...
 
 ## 규칙
 
